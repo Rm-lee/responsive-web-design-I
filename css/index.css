@@ -76,7 +76,14 @@ nav {
 	justify-content: space-around;
 
 }
+.nav-links{
+	width:100%;
+	padding:5% 0;
 
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+}
 nav a {
 	color: darkgrey;
 	text-decoration-line: none;
@@ -121,7 +128,7 @@ button {
 	padding-top: 4%;
 	border-top: 1px solid black;
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
 }
 
 .top-content div {
@@ -182,22 +189,35 @@ button {
 }
 @media (max-width:500px){
 	.container{
-		width:90%;
+		width:100%;
 		
 	}
-	nav {
-		padding-top:0;
-	 margin-top:0;
-		flex-direction:column;
-		justify-content: center;
-		
+	header {
+		width:100%;
 		
 	}
 
+	nav {
+		padding-top:0;
+	 margin-top:0;
+		flex-direction:column-reverse;
+		justify-content: center;
+		display:flex;
+	width:100%;	
 	
-	nav a{
-		border:1px solid darkgrey;
+	}
+
+	.nav-links{
+		display: flex;
+		flex-direction: column;
 	
+		width:100%;
+
+	}
+	.border{
+		
+	border-top:1px solid darkgrey;
+	border-bottom:1px solid darkgrey;
 		
 		
 	}
@@ -207,5 +227,35 @@ button {
 				 
 					position: relative;
 					
+				}
+				nav a{
+					padding-top:5%;
+					padding-bottom:5%; 
+					
+					
+				}
+				.top-content{
+					flex-direction: column;
+					align-items: center;
+					width:100%;
+					
+				}
+				.bottom-content{
+					flex-direction: column;
+					align-items: center;
+					
+					width:100%;
+				}
+				.bottom-content div{
+					width:90%;
+					margin-top:4%;
+				}
+				.top-content div{
+					width:90%;
+					margin-top:4%;
+				}
+				.middle-img{
+					width:90%;
+					margin:0 5%;
 				}
 }
